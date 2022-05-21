@@ -1,0 +1,457 @@
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+#tarea{
+  display: grid;
+  position: relative;
+  grid-area: auto;
+  grid-column: 5;
+  grid-row: auto;
+
+}
+#tvalue{
+  height: 40px;
+  width:100%;
+  padding: 10%;
+  margin: 10%;
+  border:10%;
+}
+#cal{
+display: flexbox;
+position: relative;
+flex-direction: column;
+flex-wrap: wrap;
+height: fit-content;
+width: fit-content;
+}
+
+.digits{
+  border: 1em;
+  display: flex;
+  position: absolute;
+  flex-direction: row;
+  background-color: goldenrod;
+  margin: 1em;
+  padding:2em;
+}
+
+.operators{
+  border: 1em;
+  display: flex;
+  position: absolute;
+  flex-direction: row;
+  background-color:mediumspringgreen;
+  margin: 1em;
+  padding:2em;
+}
+
+.but{
+  height: 50px;
+  width: 50px;
+  border: 1em;
+  background-color: white;
+  border-radius:10px;
+  align-content: center;
+  text-align: center;
+  justify-content: center;
+  font-size: 14pt;
+}
+
+
+.zero{
+
+}
+.one{
+
+}
+.two{
+
+}
+.three{
+
+}
+.four{
+
+}
+.five{
+
+}
+.six{
+
+}
+.seven{
+
+}
+.eight{
+
+}
+.nine{
+  
+}
+
+#page{
+    width: 100%;
+    position: relative;
+}
+#menu-container{
+
+    width:100%;
+    height:56px;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    background-color:lightblue;
+    
+    
+}
+#menu-outside{
+    background-color:lightblue;
+    width:100vw;
+    height:56px;
+    margin:0;
+    padding:0;
+    color:lime;
+    display: flex;
+    flex-direction: row;
+    position:fixed;
+    
+}
+#personal-tab{
+    flex: 0 0 225px;
+    height:30px;
+    margin:14px 0 0 20px;
+    padding:0;    
+}
+.personal-logo{
+    float:left;
+    margin: 5px 0 5px 0;
+    height:2.5em;
+    width: 3em;
+    border-radius:20px;
+}
+.pic{
+    position: relative;
+    width: 2.5em;
+    height: 2.3em;
+    align-items:center;
+    justify-items: center;
+    margin: 0;
+}
+.personal-name{
+    float:left;
+    height:24px;
+    margin: 0 0 2px 0;
+    font-weight: 450;
+    font-size: 1.7em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color:darkblue;    
+
+  }
+  
+  .menu > li {
+    margin: 0 1rem;
+  }
+  
+  .menu-button-container {
+    display: none;
+    height: 100%;
+    width: 30px;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    z-index: 2;
+  }
+  
+  #menu-toggle {
+    display: none;
+  }
+  
+  .menu-button,
+  .menu-button::before,
+  .menu-button::after {
+    display: block;
+    background-color:midnightblue;
+    position: absolute;
+    height: 4px;
+    width: 30px;
+    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    border-radius: 2px;
+  }
+  
+  .menu-button::before {
+    content: '';
+    margin-top: -8px;
+  }
+  
+  .menu-button::after {
+    content: '';
+    margin-top: 8px;
+  }
+  
+  #menu-toggle:checked + .menu-button-container .menu-button::before {
+    margin-top: 0px;
+    transform: rotate(405deg);
+  }
+  
+  #menu-toggle:checked + .menu-button-container .menu-button {
+    background: rgba(255, 255, 255, 0);
+  }
+  
+  #menu-toggle:checked + .menu-button-container .menu-button::after {
+    margin-top: 0px;
+    transform: rotate(-405deg);
+  }
+  
+
+
+#menu1{
+    margin: 0;
+    padding: 0;
+    height:56px;
+    width:100vw;
+}
+.menu-item{
+    list-style-type: none;
+    float:left;
+    width:fit-content;
+}
+.menu-link{
+    display: flex;
+    color:black;
+    text-align: center;
+    padding:5px 5px;
+    text-decoration: none;
+    margin:0 0 5px 0;
+    font-weight: 300;
+    font-size: 18px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.menu-link:hover{
+    background-color:white;
+}
+
+#search{
+    flex:0 0 30px;
+    vertical-align: top;
+    margin:10px 20px 0 0;
+    padding: 0;
+  
+}
+.search-style{
+    display: inline-block;
+    margin-top: 11px;
+    margin-right: 20px;
+    width:100%;
+}
+
+#first{
+    background-color:lightgrey;
+    font-size: 3em;
+    text-align: center;
+    height:auto;
+    width:100%;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+.myname{
+    margin: 0em;
+    font-size: 2.3em;
+}
+#second{
+    height:auto;
+    width:100%;
+    padding-top: 3em;
+    padding-bottom: .5em;
+}
+
+.about-content{
+    display: flex;
+}
+.content-info{
+    height:auto;
+    width: 100%;
+    margin: 0 2em 0 2em;
+}
+.p-content{
+  font-family:serif;
+  font-size: 16px;
+  font-weight: 300;
+  text-overflow: clip;
+  text-align: justify;
+  text-indent: 3em;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-block-end: 0;
+}
+#third{
+    height:auto;
+    width:100%;
+    background-color:lightblue ;
+    padding-top: 3em;
+    padding-bottom: .5em;
+}
+#four{
+    height:auto;
+    width:100%;
+    padding-top: 3em;
+    padding-bottom: .5em;
+}
+#five{
+    height:auto;
+    width:100%;
+    background-color:lightblue ;
+    padding-top: 3em;
+    padding-bottom: .5em;
+}
+#six{
+    height:auto;
+    width:100%;
+    padding-top: 3em;
+    padding-bottom: .5em;
+}
+#seven{
+    height:auto;
+    width:100%;
+
+    background-color:lightblue ;
+    margin-bottom: .5em;
+        
+}
+.uparrow{
+    position: fixed;
+    width: 3%;
+    height: 5%;
+    float:right;
+    right:40px;
+    bottom:0;
+    align-items:flex-end;
+    justify-items: right;
+    margin-right: 1em;
+    
+}
+
+
+@media (max-width: 700px) {
+    .menu-button-container {
+      display: flex;
+      float:right;
+      margin: 8px;
+      padding-right: 5px;
+      padding-bottom: 5px;
+      cursor: pointer;
+
+    }
+    .menu {
+      position: absolute;
+      top: 0;
+      margin-top: 50px;
+      left: -30;
+      flex-direction: column;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #menu-toggle ~ .menu li {
+      height: 0;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    #menu-toggle:checked ~ .menu li {
+      border: 1px solid #333;
+      height:   1.3em;
+      padding: 0.2em;
+      transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+      background-color:lightblue;
+      border-color: whitesmoke;
+      
+    }
+
+    #menuToggle a
+    {
+      text-decoration: none;
+      color: #232323;
+      
+      transition: color 0.3s ease;
+    }
+    
+    #menuToggle a:hover
+    {
+      color: blue;
+    }
+
+  
+
+    #menu-toggle:checked ~ .menu-link{
+        align-items: center;
+        justify-items: center;
+        padding: 3px;
+        background-color: gainsboro;
+        margin-bottom: 0;
+        
+    }
+
+    #menu-toggle:checked ~ .menu-link:hover{
+        background-color:white;
+    }
+
+    #menu-toggle:checked ~.menu > li {
+      display: block;
+      position: relative;
+      justify-content: center;
+      margin: 0;
+      padding: 0.5em 0;
+      width: 100%;
+      color: blue;
+      background-color: lightgrey;
+    }
+    .menu > li:not(:last-child) {
+      border-bottom: 1px solid #444;
+    }
+    .uparrow{
+      right:8px;
+     }
+
+    .about-content{
+      flex-direction: column;
+    }
+    #search{
+        flex:0 0 30px;
+        vertical-align: top;
+        margin:10px 20px 0 0;
+        padding: 0;
+      
+    }
+    .search-style{
+        display: inline-block;
+        margin-top: 11px;
+        margin-right: 20px;
+        width:100%;
+    }
+    
+    .myname{
+        margin: 0em;
+        font-size: 1.2em;
+
+    }
+    #search{
+        display: none;
+      
+    }
+  }
+  
