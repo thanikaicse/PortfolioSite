@@ -453,5 +453,16 @@ width: fit-content;
         display: none;
       
     }
+    .p-content{
+      font-family:serif;
+      font-size: 16px;
+      font-weight: 300;
+      text-overflow: clip;
+      text-align: justify;
+      text-indent: 3em;
+      margin-left: 1em;
+      margin-right: 1em;
+      padding: 0 1em o 1em;
+    }
   }
   
