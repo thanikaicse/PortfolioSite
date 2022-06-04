@@ -273,7 +273,7 @@ width: fit-content;
   width:100%;
   height:auto;
 }
-.icon{
+#icon{
   width:2em;
   height:2em;
   margin-inline-start: 0.5em;
@@ -464,11 +464,13 @@ width: fit-content;
       height:auto;
       width: 100%;
     }
-    .icon{
+
+  #icon{
       width:1em;
       height:1em;
-      margin-inline-start: 0.5em;
+      margin-inline-start: 0.3em;
     }
+
     #search{
         display: none;
       
